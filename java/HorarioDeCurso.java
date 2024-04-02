@@ -8,9 +8,12 @@ public class HorarioDeCurso {
     private int minutoFinal;
     private ArrayList<DiaSemana> dias;
     private String ubicacion;
+    private Curso curso;
+    private ArrayList<HorarioDeAlumno> horarios;
+    private Docente docente;
 
     public HorarioDeCurso(String codigo, int horaInicio, int minutoInicio, int horaFinal, int minutoFinal,
-            ArrayList<DiaSemana> dias, String ubicacion) {
+            ArrayList<DiaSemana> dias, String ubicacion, Curso curso, Docente docente) {
         this.codigo = codigo;
         this.horaInicio = horaInicio;
         this.minutoInicio = minutoInicio;
@@ -18,6 +21,9 @@ public class HorarioDeCurso {
         this.minutoFinal = minutoFinal;
         this.dias = dias;
         this.ubicacion = ubicacion;
+        this.curso = curso;
+        this.docente = docente;
+        this.horarios = new ArrayList<HorarioDeAlumno>();
     }
 
     public String getCodigo() {
@@ -48,6 +54,18 @@ public class HorarioDeCurso {
         return ubicacion;
     }
 
+    public Curso getCurso() {
+        return curso;
+    }
+
+    public ArrayList<HorarioDeAlumno> getHorarios() {
+        return horarios;
+    }
+
+    public Docente getDocente() {
+        return docente;
+    }
+
     public void setCodigo(String codigo) {
         this.codigo = codigo;
     }
@@ -74,6 +92,18 @@ public class HorarioDeCurso {
 
     public void setUbicacion(String ubicacion) {
         this.ubicacion = ubicacion;
+    }
+
+    public void setCurso(Curso curso) {
+        this.curso = curso;
+    }
+
+    public void setHorarios(ArrayList<HorarioDeAlumno> horarios) {
+        this.horarios = horarios;
+    }
+
+    public void setDocente(Docente docente) {
+        this.docente = docente;
     }
 }
 

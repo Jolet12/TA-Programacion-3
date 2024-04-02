@@ -6,14 +6,18 @@ public class HorarioDeAlumno {
     private ArrayList<Integer> notasPA;
     private int notaE1;
     private int notaE2;
+    private Alumno alumno;
+    private HorarioDeCurso horarioDeCurso;
 
     public HorarioDeAlumno(ArrayList<Boolean> asistencias, ArrayList<Integer> notasPB, ArrayList<Integer> notasPA,
-            int notaE1, int notaE2) {
+            int notaE1, int notaE2, Alumno alumno, HorarioDeCurso horarioDeCurso) {
         this.asistencias = asistencias;
         this.notasPB = notasPB;
         this.notasPA = notasPA;
         this.notaE1 = notaE1;
         this.notaE2 = notaE2;
+        this.alumno = alumno;
+        this.horarioDeCurso = horarioDeCurso;
     }
 
     public ArrayList<Boolean> getAsistencias() {
@@ -36,6 +40,14 @@ public class HorarioDeAlumno {
         return notaE2;
     }
 
+    public Alumno getAlumno() {
+        return alumno;
+    }
+
+    public HorarioDeCurso getHorarioDeCurso() {
+        return horarioDeCurso;
+    }
+
     public void setAsistencias(ArrayList<Boolean> asistencias) {
         this.asistencias = asistencias;
     }
@@ -56,4 +68,11 @@ public class HorarioDeAlumno {
         this.notaE2 = notaE2;
     }
 
+    public void setAlumno(Alumno alumno) {
+        this.alumno = alumno;
+    }
+
+    public void setHorarioDeCurso(HorarioDeCurso horarioDeCurso) {
+        this.horarioDeCurso = horarioDeCurso;
+    }
 }

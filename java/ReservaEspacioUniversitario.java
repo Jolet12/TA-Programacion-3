@@ -1,21 +1,19 @@
 import java.util.Date;
 
 public class ReservaEspacioUniversitario {
-    private EspacioUniversitario espacio;
     private Date fechaHoraInicio;
     private Date fechaHoraFin;
     private String motivo;
+    private EspacioUniversitario espacio;
+    private Usuario usuario;
 
-    public ReservaEspacioUniversitario(EspacioUniversitario espacio, Date fechaHoraInicio, Date fechaHoraFin,
-            String motivo) {
-        this.espacio = espacio;
+    public ReservaEspacioUniversitario(Date fechaHoraInicio, Date fechaHoraFin,
+            String motivo, EspacioUniversitario espacio, Usuario usuario) {
         this.fechaHoraInicio = fechaHoraInicio;
         this.fechaHoraFin = fechaHoraFin;
         this.motivo = motivo;
-    }
-
-    public EspacioUniversitario getEspacio() {
-        return espacio;
+        this.espacio = espacio;
+        this.usuario = usuario;
     }
 
     public Date getFechaHoraInicio() {
@@ -30,8 +28,12 @@ public class ReservaEspacioUniversitario {
         return motivo;
     }
 
-    public void setEspacio(EspacioUniversitario espacio) {
-        this.espacio = espacio;
+    public EspacioUniversitario getEspacio() {
+        return espacio;
+    }
+
+    public Usuario getUsuario() {
+        return usuario;
     }
 
     public void setFechaHoraInicio(Date fechaHoraInicio) {
@@ -44,5 +46,13 @@ public class ReservaEspacioUniversitario {
 
     public void setMotivo(String motivo) {
         this.motivo = motivo;
+    }
+
+    public void setEspacio(EspacioUniversitario espacio) {
+        this.espacio = espacio;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
     }
 }

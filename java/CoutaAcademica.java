@@ -8,9 +8,10 @@ public class CoutaAcademica {
     private EstadoPago estadoPago;
     private Date vencimiento;
     private Date fechaPago;
+    private Alumno alumno;
 
     public CoutaAcademica(int nroCouta, String ciclo, float importe, TipoMoneda tipoMoneda, EstadoPago estadoPago,
-            Date vencimiento, Date fechaPago) {
+            Date vencimiento, Date fechaPago, Alumno alumno) {
         this.nroCouta = nroCouta;
         this.ciclo = ciclo;
         this.importe = importe;
@@ -18,6 +19,7 @@ public class CoutaAcademica {
         this.estadoPago = estadoPago;
         this.vencimiento = vencimiento;
         this.fechaPago = fechaPago;
+        this.alumno = alumno;
     }
 
     public int getNroCouta() {
@@ -48,6 +50,10 @@ public class CoutaAcademica {
         return fechaPago;
     }
 
+    public Alumno getAlumno() {
+        return alumno;
+    }
+
     public void setNroCouta(int nroCouta) {
         this.nroCouta = nroCouta;
     }
@@ -76,6 +82,9 @@ public class CoutaAcademica {
         this.fechaPago = fechaPago;
     }
 
+    public void setAlumno(Alumno alumno) {
+        this.alumno = alumno;
+    }
 }
 
 enum TipoMoneda {
