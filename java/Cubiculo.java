@@ -1,20 +1,15 @@
-public class Cubiculo {
-    private int id;
+public class Cubiculo extends EspacioUniversitario {
     private String codigo;
     private int capacidad;
     private TipoCubiculo tipoCubiculo;
     private AmbienteEstudio ambiente;
 
     public Cubiculo(int id, String codigo, int capacidad, TipoCubiculo tipoCubiculo, AmbienteEstudio ambiente) {
-        this.id = id;
+        super(id);
         this.codigo = codigo;
         this.capacidad = capacidad;
         this.tipoCubiculo = tipoCubiculo;
         this.ambiente = ambiente;
-    }
-
-    public int getId() {
-        return id;
     }
 
     public String getCodigo() {
@@ -31,10 +26,6 @@ public class Cubiculo {
 
     public AmbienteEstudio getAmbiente() {
         return ambiente;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public void setCodigo(String codigo) {
@@ -56,4 +47,8 @@ public class Cubiculo {
 
 enum TipoCubiculo {
     ConTelevisor, ConPizarra, SinEquipo
+}
+
+enum AmbienteEstudio {
+    BibliotecaCentral, ComplejoDeInnovacionAcademica, Tinkuy;
 }

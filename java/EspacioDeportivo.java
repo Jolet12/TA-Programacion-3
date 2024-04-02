@@ -1,8 +1,8 @@
 public class EspacioDeportivo extends EspacioUniversitario {
     private String nombre;
 
-    public EspacioDeportivo(String nombre, String ubicacion, EstadoEspacio estado) {
-        super(nombre, ubicacion, estado);
+    public EspacioDeportivo(int id, String nombre) {
+        super(id);
         this.nombre = nombre;
     }
 
