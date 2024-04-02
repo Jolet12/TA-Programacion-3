@@ -7,6 +7,7 @@ abstract public class Usuario implements IConsultableHorario {
   private String contrasena;
   private ArrayList<ReservaCafeteria> reservasCafeteria;
   private ArrayList<ReservaEspacioUniversitario> reservaEspacioUniversitario;
+  private ArrayList<Pago> pagos;
 
   public Usuario(String codigo, String nombres, String apellidos, String contrasena) {
     this.codigo = codigo;
@@ -41,6 +42,10 @@ abstract public class Usuario implements IConsultableHorario {
     return reservaEspacioUniversitario;
   }
 
+  public ArrayList<Pago> getPagos() {
+    return pagos;
+  }
+
   public void setCodigo(String codigo) {
     this.codigo = codigo;
   }
@@ -63,6 +68,10 @@ abstract public class Usuario implements IConsultableHorario {
 
   public void setReservaEspacioUniversitario(ArrayList<ReservaEspacioUniversitario> reservaEspacioUniversitario) {
     this.reservaEspacioUniversitario = reservaEspacioUniversitario;
+  }
+
+  public void setPagos(ArrayList<Pago> pagos) {
+    this.pagos = pagos;
   }
 
   public String consultarHorario() {
