@@ -8,6 +8,7 @@ abstract public class Usuario implements IConsultableHorario {
   private ArrayList<ReservaCafeteria> reservasCafeteria;
   private ArrayList<ReservaEspacioUniversitario> reservaEspacioUniversitario;
   private ArrayList<Pago> pagos;
+  private ArrayList<Like> likes;
 
   public Usuario(String codigo, String nombres, String apellidos, String contrasena) {
     this.codigo = codigo;
@@ -16,6 +17,7 @@ abstract public class Usuario implements IConsultableHorario {
     this.contrasena = contrasena;
     this.reservasCafeteria = new ArrayList<ReservaCafeteria>();
     this.reservaEspacioUniversitario = new ArrayList<ReservaEspacioUniversitario>();
+    this.likes = new ArrayList<Like>();
   }
 
   public String getCodigo() {
@@ -46,6 +48,10 @@ abstract public class Usuario implements IConsultableHorario {
     return pagos;
   }
 
+  public ArrayList<Like> getLikes() {
+    return likes;
+  }
+
   public void setCodigo(String codigo) {
     this.codigo = codigo;
   }
@@ -72,6 +78,10 @@ abstract public class Usuario implements IConsultableHorario {
 
   public void setPagos(ArrayList<Pago> pagos) {
     this.pagos = pagos;
+  }
+
+  public void setLikes(ArrayList<Like> likes) {
+    this.likes = likes;
   }
 
   public String consultarHorario() {

@@ -1,3 +1,3 @@
 public interface IConsultableHorario {
-    String consultarHorario();
+    public String consultarHorario();
 }
