@@ -16,7 +16,7 @@ public class EspacioUniversitario {
     }
 
     public String getUbicacion() {
-      return ubicacion;  
+        return ubicacion;  
     }
 
     public ArrayList<ReservaEspacioUniversitario> getReservas() {
@@ -28,7 +28,7 @@ public class EspacioUniversitario {
     }
 
     public void setUbicacion(String ubicacion) {
-      this.ubicacion = ubicacion;
+        this.ubicacion = ubicacion;
     }
 
     public void setReservas(ArrayList<ReservaEspacioUniversitario> reservas) {

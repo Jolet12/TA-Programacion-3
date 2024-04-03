@@ -23,7 +23,7 @@ public class Cubiculo extends EspacioUniversitario {
     }
 
     public int getPiso() {
-      return piso;
+        return piso;
     }
 
     public TipoCubiculo getTipoCubiculo() {
@@ -43,7 +43,7 @@ public class Cubiculo extends EspacioUniversitario {
     }
 
     public void setPiso(int piso) {
-      this.piso = piso;  
+        this.piso = piso;  
     }
 
     public void setTipoCubiculo(TipoCubiculo tipoCubiculo) {
