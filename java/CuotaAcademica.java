@@ -1,7 +1,7 @@
 import java.util.Date;
 
-public class CoutaAcademica {
-    private int nroCouta;
+public class CuotaAcademica {
+    private int nroCuota;
     private String ciclo;
     private float importe;
     private TipoMoneda tipoMoneda;
@@ -10,9 +10,9 @@ public class CoutaAcademica {
     private Date fechaPago;
     private Alumno alumno;
 
-    public CoutaAcademica(int nroCouta, String ciclo, float importe, TipoMoneda tipoMoneda, EstadoPago estadoPago,
+    public CuotaAcademica(int nroCuota, String ciclo, float importe, TipoMoneda tipoMoneda, EstadoPago estadoPago,
             Date vencimiento, Date fechaPago, Alumno alumno) {
-        this.nroCouta = nroCouta;
+        this.nroCuota = nroCuota;
         this.ciclo = ciclo;
         this.importe = importe;
         this.tipoMoneda = tipoMoneda;
@@ -22,8 +22,8 @@ public class CoutaAcademica {
         this.alumno = alumno;
     }
 
-    public int getNroCouta() {
-        return nroCouta;
+    public int getNroCuota() {
+        return nroCuota;
     }
 
     public String getCiclo() {
@@ -54,8 +54,8 @@ public class CoutaAcademica {
         return alumno;
     }
 
-    public void setNroCouta(int nroCouta) {
-        this.nroCouta = nroCouta;
+    public void setNroCuota(int nroCuota) {
+        this.nroCuota = nroCuota;
     }
 
     public void setCiclo(String ciclo) {

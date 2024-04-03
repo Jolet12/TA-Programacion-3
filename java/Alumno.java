@@ -3,13 +3,13 @@ import java.util.ArrayList;
 public class Alumno extends Usuario {
   private TipoAlumno tipoAlumno;
   private ArrayList<HorarioDeAlumno> horarios;
-  private ArrayList<CoutaAcademica> cuotas;
+  private ArrayList<CuotaAcademica> cuotas;
 
   public Alumno(String codigo, String nombres, String apellidos, String contrasena, TipoAlumno tipoAlumno) {
     super(codigo, nombres, apellidos, contrasena);
     this.tipoAlumno = tipoAlumno;
     this.horarios = new ArrayList<HorarioDeAlumno>();
-    this.cuotas = new ArrayList<CoutaAcademica>();
+    this.cuotas = new ArrayList<CuotaAcademica>();
   }
 
   public TipoAlumno getTipoAlumno() {
@@ -20,7 +20,7 @@ public class Alumno extends Usuario {
     return horarios;
   }
 
-  public ArrayList<CoutaAcademica> getCuotas() {
+  public ArrayList<CuotaAcademica> getCuotas() {
     return cuotas;
   }
 
@@ -32,7 +32,7 @@ public class Alumno extends Usuario {
     this.horarios = horarios;
   }
 
-  public void setCuotas(ArrayList<CoutaAcademica> cuotas) {
+  public void setCuotas(ArrayList<CuotaAcademica> cuotas) {
     this.cuotas = cuotas;
   }
 }
